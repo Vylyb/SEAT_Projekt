@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Profile="http:///schemas/Profile/_9FtrQFmUEeK6tMYf6Z504w/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/Profile/_9FtrQFmUEeK6tMYf6Z504w/1 profile/gallery.profile.uml#_9FuSUFmUEeK6tMYf6Z504w">
+  <uml:Model xmi:id="_8ATiYFmUEeK6tMYf6Z504w" name="Model">
+    <packageImport xmi:id="_8ATiYVmUEeK6tMYf6Z504w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CMfX0FmVEeK6tMYf6Z504w" name="PictureGallery"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NU-IIFmVEeK6tMYf6Z504w" name="FolderList"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Y8p88FmVEeK6tMYf6Z504w" name="ThumbNail"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_azrI8FmVEeK6tMYf6Z504w" name="Picture"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_d7U2YFmVEeK6tMYf6Z504w" name="PictureView"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nOfq4FmVEeK6tMYf6Z504w" name="folderList_pictureGallery_1" memberEnd="_nOfq4VmVEeK6tMYf6Z504w _nOfD0FmVEeK6tMYf6Z504w" navigableOwnedEnd="_nOfD0FmVEeK6tMYf6Z504w">
+      <ownedEnd xmi:id="_nOfq4VmVEeK6tMYf6Z504w" name="folderList" type="_NU-IIFmVEeK6tMYf6Z504w" association="_nOfq4FmVEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nOfq4lmVEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nOfq41mVEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_nOfD0FmVEeK6tMYf6Z504w" name="pictureGallery" type="_CMfX0FmVEeK6tMYf6Z504w" association="_nOfq4FmVEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nOfD0VmVEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nOfD0lmVEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yF9js1mVEeK6tMYf6Z504w" name="pictureGallery_folderList_1" memberEnd="_yF9jtFmVEeK6tMYf6Z504w _yF9jsFmVEeK6tMYf6Z504w" navigableOwnedEnd="_yF9jsFmVEeK6tMYf6Z504w">
+      <ownedEnd xmi:id="_yF9jtFmVEeK6tMYf6Z504w" name="pictureGallery" type="_CMfX0FmVEeK6tMYf6Z504w" association="_yF9js1mVEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yF9jtVmVEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yF9jtlmVEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_yF9jsFmVEeK6tMYf6Z504w" name="folderList" type="_NU-IIFmVEeK6tMYf6Z504w" aggregation="composite" association="_yF9js1mVEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yF9jsVmVEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yF9jslmVEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WcGPQFmWEeK6tMYf6Z504w" name="folderList_thumbNail_1" memberEnd="_WcGPQVmWEeK6tMYf6Z504w _WcFoMFmWEeK6tMYf6Z504w" navigableOwnedEnd="_WcFoMFmWEeK6tMYf6Z504w">
+      <ownedEnd xmi:id="_WcGPQVmWEeK6tMYf6Z504w" name="folderList" type="_NU-IIFmVEeK6tMYf6Z504w" association="_WcGPQFmWEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WcGPQlmWEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WcGPQ1mWEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_WcFoMFmWEeK6tMYf6Z504w" name="thumbNail" type="_Y8p88FmVEeK6tMYf6Z504w" aggregation="shared" association="_WcGPQFmWEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WcFoMVmWEeK6tMYf6Z504w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WcFoMlmWEeK6tMYf6Z504w" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZlpksFmXEeK6tMYf6Z504w" name="thumbNail_picture_1" memberEnd="_ZlpksVmXEeK6tMYf6Z504w _Zlo9oFmXEeK6tMYf6Z504w" navigableOwnedEnd="_Zlo9oFmXEeK6tMYf6Z504w">
+      <ownedEnd xmi:id="_ZlpksVmXEeK6tMYf6Z504w" name="thumbNail" type="_Y8p88FmVEeK6tMYf6Z504w" association="_ZlpksFmXEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZlpkslmXEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zlpks1mXEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Zlo9oFmXEeK6tMYf6Z504w" name="picture" type="_azrI8FmVEeK6tMYf6Z504w" aggregation="composite" association="_ZlpksFmXEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zlo9oVmXEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zlo9olmXEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dP_IcFmXEeK6tMYf6Z504w" name="pictureView_picture_1" memberEnd="_dP_IcVmXEeK6tMYf6Z504w _dP-hYFmXEeK6tMYf6Z504w" navigableOwnedEnd="_dP-hYFmXEeK6tMYf6Z504w">
+      <ownedEnd xmi:id="_dP_IcVmXEeK6tMYf6Z504w" name="pictureView" type="_d7U2YFmVEeK6tMYf6Z504w" association="_dP_IcFmXEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dP_IclmXEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dP_Ic1mXEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_dP-hYFmXEeK6tMYf6Z504w" name="picture" type="_azrI8FmVEeK6tMYf6Z504w" association="_dP_IcFmXEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dP-hYVmXEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dP-hYlmXEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fvkJQ1mXEeK6tMYf6Z504w" name="pictureGallery_pictureView_1" memberEnd="_fvkJRFmXEeK6tMYf6Z504w _fvkJQFmXEeK6tMYf6Z504w" navigableOwnedEnd="_fvkJQFmXEeK6tMYf6Z504w">
+      <ownedEnd xmi:id="_fvkJRFmXEeK6tMYf6Z504w" name="pictureGallery" type="_CMfX0FmVEeK6tMYf6Z504w" association="_fvkJQ1mXEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvkJRVmXEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvkJRlmXEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_fvkJQFmXEeK6tMYf6Z504w" name="pictureView" type="_d7U2YFmVEeK6tMYf6Z504w" aggregation="composite" association="_fvkJQ1mXEeK6tMYf6Z504w">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvkJQVmXEeK6tMYf6Z504w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvkJQlmXEeK6tMYf6Z504w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_Ko0q8FmVEeK6tMYf6Z504w">
+      <eAnnotations xmi:id="_KpBfQFmVEeK6tMYf6Z504w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="profile/gallery.profile.uml#_9FuSUFmUEeK6tMYf6Z504w"/>
+      </eAnnotations>
+      <appliedProfile href="profile/gallery.profile.uml#_GTmegFmSEeK6tMYf6Z504w"/>
+    </profileApplication>
+  </uml:Model>
+  <Profile:Window xmi:id="_MqMs0FmVEeK6tMYf6Z504w" base_Class="_CMfX0FmVEeK6tMYf6Z504w" title="Picture Gallery"/>
+  <Profile:TreeView xmi:id="_XoyhUFmVEeK6tMYf6Z504w" base_Class="_NU-IIFmVEeK6tMYf6Z504w"/>
+  <Profile:PictureDisplay xmi:id="_fTPEgFmVEeK6tMYf6Z504w" base_Class="_d7U2YFmVEeK6tMYf6Z504w"/>
+</xmi:XMI>
