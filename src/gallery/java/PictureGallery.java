@@ -10,7 +10,7 @@ public class PictureGallery extends JFrame{
 	private static FolderList folderList;
 	private static PictureView pictureView;
 	
-	public final static String[] filetypes={"jpg","png"};
+	public final static String[] filetypes={"jpg","png","gif","bmp","jpeg"};
 	
 	public static void main(String[] args) {
 		(new PictureGallery(1024, 768)).setVisible(true);
@@ -28,7 +28,7 @@ public class PictureGallery extends JFrame{
 		pictureView=new PictureView(this);
 		add(pictureView,BorderLayout.CENTER);
 		
-		addFolder(new File("B:/Eigene Bilder/Fotos/2012-08-02 (Przystanek Woodstock)"));
+		addFolder(new File("src/gallery/html/imagefolders/folder1/pictures"));
 	}
 	
 	public void addFolder(File folder){

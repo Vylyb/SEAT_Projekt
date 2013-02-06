@@ -37,7 +37,7 @@ public class PictureView extends Container {
 			pane.setText("<table width=100% height=100% border=0><tr>" +
 					"<td align=center valign=middle><img src=\"file:///"+picture.getPath()+
 					"\" width=800 height=600 >" +
-					"</td></tr><tr><td align=center valign=top>"+picture.getName()+
+					"</td></tr><tr><td align=center valign=top><font face=verdana size=4>"+picture.getName()+
 					"</td></tr></table>");
 		}
 	}
